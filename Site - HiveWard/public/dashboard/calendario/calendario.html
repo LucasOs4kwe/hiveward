@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="calendario.css">
+    <link rel="shortcut icon" href="../assets/logo_icon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/1dbb06025a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="content">
+        <div id="main_container">
+            <div id="sidebar">
+                <div id="welcome">
+                    <span id="main_title">Bem vindo (a), <br><span id="name_user"></span></span>
+                </div>
+                <div class="navmenu">
+                    <div class="navmenu_start">
+                        <ul class="navmenu_list">
+                            <a href="../home/home.html">
+                                <li id="painel" class="selected">
+                                    <div class="icone_container">
+                                        <img src="../assets/icon/navmenu_painel.svg" class="icone">
+                                    </div>
+                                    <span class="navmenu_txt_selected">Painel</span>
+                                </li>
+                            </a>
+
+                            <a href="../calendario/calendario.html">
+                                <li id="calendario">
+                                    <div class="icone_container_selected">
+                                        <img class="icone" src="../assets/icon/navmenu_calendar_selected.svg">
+                                    </div>
+                                    <span class="navmenu_txt">Calendário</span>
+                                </li>
+                            </a>
+
+                            <a href="../especies/especies.html">
+                                <li id="especies">
+                                    <div class="icone_container">
+                                        <img src="../assets/icon/navmenu_especies.svg" class="icone">
+                                    </div>
+                                    <span class="navmenu_txt">Espécies</span>
+                                </li>
+                            </a>
+
+                            <!-- <a href="#">
+                                <li id="duvidas">
+                                    <div class="icone_container">
+                                        <img src="../assets/icon/navmenu_duvidas.svg" class="icone">
+                                    </div>
+                                    <span class="navmenu_txt">Dúvidas</span>
+                                </li>
+                            </a> -->
+
+                            <a href="../ajustes/ajustes.html">
+                                <li id="ajustes">
+                                    <div class="icone_container">
+                                        <img src="../assets/icon/navmenu_config.svg" class="icone">
+                                    </div>
+                                    <span class="navmenu_txt">Ajustes</span>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="linespace"></div>
+                    <div class="navmenu_end">
+                        <ul class="navmenu_list">
+                            <a href="../../Página Inicial/home.html">
+                                <li id="home">
+                                    <div class="icone_container">
+                                        <img src="../assets/icon/navmenu_home.svg" class="icone">
+                                    </div>
+                                    <span class="navmenu_txt">Home</span>
+                                </li>
+                            </a>
+                            <a href="#">
+                                <li id="logout">
+                                    <div class="icone_container">
+                                        <img src="../assets/icon/navmenu_logout.svg" class="icone">
+                                    </div>
+                                    <span class="navmenu_txt">Sair</span>
+                                </li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container2">
+                <div id="container2_header">
+                    <div class="logo">
+                        <img src="../assets/icon/header_logo.svg" alt="">
+                        <span id="title">Calendário</span>
+                    </div>
+                    <span id="month-header">Dezembro de 2021</span>
+                    <!-- <div id="container2_header_items">
+                        <input type="text" id="pesquisa" placeholder="Pesquisar">
+                    </div> -->
+                </div>
+                <div class="calendar-content">
+                    <table class="calendar">
+                        <tr class="date">
+                            <th>DOM</th>
+                            <th>SEG</th>
+                            <th>TER</th>
+                            <th>QUA</th>
+                            <th>QUI</th>
+                            <th>SEX</th>
+                            <th>SÁB</th>
+                        </tr>
+                        <tr class="date">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>1</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>2</td></a>
+                        </tr>
+                        <tr class="date">
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>3</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>4</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>5</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>6</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>7</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>8</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>9</td></a>
+                        </tr>
+                        <tr class="date">
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>10</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>11</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>12</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>13</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>14</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>15</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>16</td></a>
+                        </tr>
+                        <tr class="date">
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>17</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>18</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>19</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>20</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>21</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>22</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.htm../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>23</td></a>
+                        </tr>
+                        <tr class="date">
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>24</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>25</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>26</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>27</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>28</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>29</td></a>
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i>30</td></a>
+                        </tr>
+                        <tr class="date">
+                            <td><a href="../calendario detalhado/calendario-detalhado.html"><i class="fas fa-info-circle"></i></a>31</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    name_user.innerHTML = `${sessionStorage.NOME_USUARIO}`;
+</script>
